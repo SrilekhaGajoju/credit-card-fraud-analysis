@@ -44,7 +44,7 @@ credit-card-fraud-analysis/
 │   ├── Credit Card Fraud Detection.pbip         # open this in Power BI Desktop
 │   ├── Credit Card Fraud Detection.Report/      # report pages and visuals
 │   └── Credit Card Fraud Detection.SemanticModel/  # tables, relationships, DAX measures
-├── images/                                      # report screenshots
+├── images/                                      # report page screenshots
 └── data/                                        # put fraudTest.csv here (not tracked)
 ```
 
@@ -147,16 +147,23 @@ Open `powerbi/Credit Card Fraud Detection.pbip` in Power BI Desktop. The report 
 
 ### Screenshots
 
-> Add screenshots of each page to `images/` and they will appear here.
-
-<!--
+**Overview**
 ![Overview](images/overview.png)
+
+**Fraud patterns**
 ![Fraud patterns](images/fraud_patterns.png)
+
+**Geography**
 ![Geography](images/geography.png)
+
+**Merchant and card risk**
 ![Merchant and card risk](images/merchant_card_risk.png)
+
+**Findings**
 ![Findings](images/findings.png)
+
+**Recommendations**
 ![Recommendations](images/recommendations.png)
--->
 
 ---
 
