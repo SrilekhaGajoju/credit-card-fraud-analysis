@@ -197,7 +197,4 @@ The report is built in Power BI Desktop on top of the MySQL `fraud_analysis` dat
 
 ---
 
-- **Fixed numbers on the text pages.** The numbers on the Findings and Recommendations pages are for the full period with no filters. They don't change with the slicers.
-
----
 
