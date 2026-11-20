@@ -20,7 +20,7 @@ The raw data is cleaned in **Python**, loaded into a **MySQL** star schema, anal
 | Cleaning & feature engineering | Python (pandas, NumPy) in Jupyter | Checks data quality, fixes types, adds new columns, builds the star schema |
 | Storage | MySQL | `fraud_analysis` database with one fact table and two dimension tables |
 | Analysis | SQL | KPIs, breakdowns, window functions, CTEs and views |
-| Reporting | Power BI (PBIP project format) | Six-page interactive report with DAX measures |
+| Reporting | Power BI Desktop | Six-page interactive report with DAX measures |
 
 ```
 fraudTest.csv ──► Jupyter notebook ──► MySQL (star schema) ──► SQL analysis
@@ -40,11 +40,7 @@ credit-card-fraud-analysis/
 │   ├── 01_schema.sql                            # database + tables + row-count checks
 │   ├── 02_analysis_queries.sql                  # analysis queries
 │   └── 03_views.sql                             # reusable views
-├── powerbi/
-│   ├── Credit Card Fraud Detection.pbip         # open this in Power BI Desktop
-│   ├── Credit Card Fraud Detection.Report/      # report pages and visuals
-│   └── Credit Card Fraud Detection.SemanticModel/  # tables, relationships, DAX measures
-├── images/                                      # report page screenshots
+├── images/                                      # Power BI report page screenshots
 └── data/                                        # put fraudTest.csv here (not tracked)
 ```
 
@@ -123,7 +119,7 @@ After this, the redundant columns (`zip`, `dob`, `unix_time`, `job`) are dropped
 
 ## 4. Power BI report
 
-Open `powerbi/Credit Card Fraud Detection.pbip` in Power BI Desktop. The report connects to the local MySQL `fraud_analysis` database. Every dashboard page has Date, Category and State slicers and a **Reset all** button.
+The report is built in Power BI Desktop on top of the MySQL `fraud_analysis` database. The report file itself is not included in this repository; the screenshots below show each page. Every dashboard page has Date, Category and State slicers and a **Reset all** button.
 
 | Page | What it shows |
 |---|---|
@@ -198,8 +194,6 @@ Open `powerbi/Credit Card Fraud Detection.pbip` in Power BI Desktop. The report 
    ```
    Requirements: `pandas`, `numpy`, `sqlalchemy`, `pymysql`, `pyarrow`.
 4. **Analyse.** Run `sql/02_analysis_queries.sql` and `sql/03_views.sql`.
-5. **Open the report.** Open `powerbi/Credit Card Fraud Detection.pbip` in Power BI Desktop, enter your MySQL login when asked, and refresh.
-   - To see the map, turn on *File → Options → Security → Use Map and Filled Map visuals*.
 
 ---
 
@@ -212,4 +206,3 @@ Open `powerbi/Credit Card Fraud Detection.pbip` in Power BI Desktop. The report 
 
 ---
 
-**Author:** Srilekha

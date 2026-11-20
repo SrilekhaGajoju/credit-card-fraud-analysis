@@ -4,11 +4,10 @@ data/*
 *.csv
 *.parquet
 
-# ---- Power BI local files ----
-# cache.abf holds a full copy of the imported data; localSettings.json is per-machine
-**/.pbi/localSettings.json
-**/.pbi/cache.abf
+# ---- Power BI report (kept locally, not published) ----
+powerbi/
 *.pbix
+*.pbip
 
 # ---- Jupyter / Python ----
 .ipynb_checkpoints/
