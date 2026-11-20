@@ -1,0 +1,23 @@
+# ---- Data (too large for GitHub - download from Kaggle, see README) ----
+data/*
+!data/.gitkeep
+*.csv
+*.parquet
+
+# ---- Power BI local files ----
+# cache.abf holds a full copy of the imported data; localSettings.json is per-machine
+**/.pbi/localSettings.json
+**/.pbi/cache.abf
+*.pbix
+
+# ---- Jupyter / Python ----
+.ipynb_checkpoints/
+__pycache__/
+.env
+
+# ---- OS / editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
