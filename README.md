@@ -197,11 +197,6 @@ The report is built in Power BI Desktop on top of the MySQL `fraud_analysis` dat
 
 ---
 
-## Notes and limitations
-
-- **Simulated data.** The patterns are useful for practice and for showing the method. They are not real-world fraud statistics.
-- **June is partial.** It only covers 21–30 June, so monthly totals for June look low.
-- **Under 18s.** The notebook's age bins start at 18, so customers aged 15–17 (6,292 transactions) have no age group in the database. The Power BI model groups them as *Under 18*. None of their transactions were fraud.
 - **Fixed numbers on the text pages.** The numbers on the Findings and Recommendations pages are for the full period with no filters. They don't change with the slicers.
 
 ---
